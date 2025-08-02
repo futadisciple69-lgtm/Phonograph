@@ -76,9 +76,9 @@ public class App extends Application {
     public static void setOnProVersionChangedListener(OnProVersionChangedListener listener) {
         onProVersionChangedListener = listener;
     }
-    public static void notifyProVersionChanged() {
-        if (onProVersionChangedListener != null) {
-            onProVersionChangedListener.onProVersionChanged();
+    public static boolean isProVersion() {
+    return true;
+}
         }
     }
     public interface OnProVersionChangedListener {
